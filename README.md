@@ -103,7 +103,7 @@ The 2000–01 NBA play-by-play dataset contains over **500 000 event records** s
 
 ## 8. Output Files (CSV)
 
-All results downloaded to `~/Downloads/` as:
+All results downloaded to `~/outputcsv/` as:
 
 - `scores.csv`
 - `points_by_player.csv`
@@ -121,7 +121,7 @@ hdfs dfs -rm -r -f /user/hdoop/output_*
 # … as shown in the methodology …
 
 # Download CSVs
-hdfs dfs -cat /user/hdoop/output_scores/part-* | tr '\t' ',' > ~/Downloads/scores.csv
+hdfs dfs -cat /user/hdoop/output_scores/part-* | tr '\t' ',' > ~/outputcsv/scores.csv
 # … repeat for other outputs …
 ```
 
